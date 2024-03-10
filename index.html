@@ -7,6 +7,25 @@
     />
     <meta name="M.Zayem" content="" />
     <title>Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        padding: 30px 0px;
+        display: table;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -16,6 +35,20 @@
     <hr />
     <div>
       <h2>My Project</h2>
+      <div class="row">
+        <div class="column">
+          <img src="./assets/images/Archstone.webp" width="200" />
+          <figcaption>Archstone</figcaption>
+        </div>
+        <div class="column">
+          <img src="./assets/images/Asmic.webp" width="200" />
+          <figcaption>Asmic</figcaption>
+        </div>
+        <div class="column">
+          <img src="./assets/images/upfirepro.webp" width="200" />
+          <figcaption>upfirepro</figcaption>
+        </div>
+      </div>
     </div>
     <hr />
     <div>
